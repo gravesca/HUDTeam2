@@ -1,0 +1,17 @@
+body {
+	background-color: #ffffff;
+}
+h1, p {
+	color: white;
+}
+
+table {
+	border: 2px solid red;
+	background-color: #FFC;
+}
+th {
+	border-bottom: 5px solid #000;
+}
+td {
+	borer-bottom: 2px solid #666;
+}
