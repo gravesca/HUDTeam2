@@ -17,7 +17,7 @@ CREATE TABLE pastry.locoVision_tbl (
 	Longitude DECIMAL (6, 4) CHECK (Longitude <= 180 AND Latitude >= -180)
 )
 
-CREATE TABLE patry.powerAdvisor_tbl (
+CREATE TABLE pastry.powerAdvisor_tbl (
 	timeVariable INT PRIMARY KEY,
 	Last_Updated TIMESTAMP,
 	Health_Score DECIMAL (3, 1),
