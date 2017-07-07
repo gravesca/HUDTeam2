@@ -1,4 +1,4 @@
-CREATE DATABASE pastry
+CREATE DATABASE pastry;
 
 CREATE TABLE pastry.tripOptimizer_tbl (
 	timeVariable INT PRIMARY KEY,
@@ -8,14 +8,14 @@ CREATE TABLE pastry.tripOptimizer_tbl (
 	Tractive_Effort DECIMAL (10, 4),
 	Power_Number DECIMAL (9, 4),
 	Speed DECIMAL (6, 4)
-)
+);
 
 CREATE TABLE pastry.locoVision_tbl (
 	timeVariable INT PRIMARY KEY,
 	Travel_Direction VARCHAR2 (2) CHECK (Travel_Direction IN ('N', 'S', 'E', 'W', 'NW', 'NE', 'SW', 'SE')),
 	Latitude DECIMAL (6, 4) CHECK (Latitude <= 90 AND Latitude >= -90),
 	Longitude DECIMAL (6, 4) CHECK (Longitude <= 180 AND Latitude >= -180)
-)
+);
 
 CREATE TABLE pastry.powerAdvisor_tbl (
 	timeVariable INT PRIMARY KEY,
@@ -27,8 +27,12 @@ CREATE TABLE pastry.powerAdvisor_tbl (
 	Work_Order_Created_Date TIMESTAMP,
 	Work_Order_Number VARCHAR2 (14),
 	Work_Order_Status VARCHAR2 (3)
-)
+);
 
 CREATE TABLE pastry.ActivePerformceChecks_tbl (
 	PerformanceCheckName VARCHAR2 (30) PRIMARY KEY
+<<<<<<< HEAD
+);
+=======
 )
+>>>>>>> 6db060e1a1513880d9b8a5b0a347891b920ebffe
