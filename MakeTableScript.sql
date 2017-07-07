@@ -29,8 +29,8 @@ CREATE TABLE powerAdvisor_tbl (
 	Latitude DECIMAL (6, 4),
 	Longitude DECIMAL (6, 4),
 	Work_Order_Created_Date TIMESTAMP,
-	Work_Order_Number VARCHAR2 (14),
-	Work_Order_Status VARCHAR2 (3),
+	Work_Order_Number VARCHAR (14),
+	Work_Order_Status VARCHAR (3),
 	CHECK (Defect_Level IN ('Very Low', 'Low', 'Med', 'High')),
 	CHECK (Latitude <= 90 AND Latitude >= -90),
 	CHECK (Longitude <= 180 AND Latitude >= -180)
