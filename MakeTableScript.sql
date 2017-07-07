@@ -15,7 +15,10 @@ CREATE TABLE locoVision_tbl (
 	timeVariable INT PRIMARY KEY,
 	Travel_Direction VARCHAR (2),
 	Latitude DECIMAL (6, 4),
-	Longitude DECIMAL (6, 4)
+	Longitude DECIMAL (6, 4),
+	CHECK (Travel_Direction IN ('N', 'S', 'E', 'W', 'NW', 'NE', 'SW', 'SE')),
+	CHECK (Latitude <= 90 AND Latitude >= -90),
+	CHECK (Longitude <= 180 AND Latitude >= -180)
 );
 
 CREATE TABLE powerAdvisor_tbl (
@@ -27,7 +30,10 @@ CREATE TABLE powerAdvisor_tbl (
 	Longitude DECIMAL (6, 4),
 	Work_Order_Created_Date TIMESTAMP,
 	Work_Order_Number VARCHAR2 (14),
-	Work_Order_Status VARCHAR2 (3)
+	Work_Order_Status VARCHAR2 (3),
+	CHECK (Defect_Level IN ('Very Low', 'Low', 'Med', 'High')),
+	CHECK (Latitude <= 90 AND Latitude >= -90),
+	CHECK (Longitude <= 180 AND Latitude >= -180)
 );
 
 CREATE TABLE ActivePerformceChecks_tbl (
