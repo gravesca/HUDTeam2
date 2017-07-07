@@ -2,7 +2,7 @@ CREATE DATABASE pastry;
 USE pastry;
 
 CREATE TABLE tripOptimizer_tbl (
-	timeVariable INT PRIMARY KEY,
+	timeVariable INT PRIMARY KEY AUTO_INCREMENT,
 	Air_Brake_Effort DECIMAL (10, 4),
 	Notch DECIMAL (6, 4),
 	Distance_In_Route DECIMAL (7,4),
@@ -12,7 +12,7 @@ CREATE TABLE tripOptimizer_tbl (
 );
 
 CREATE TABLE locoVision_tbl (
-	timeVariable INT PRIMARY KEY,
+	timeVariable INT PRIMARY KEY AUTO_INCREMENT,
 	Travel_Direction VARCHAR (2),
 	Latitude DECIMAL (6, 4),
 	Longitude DECIMAL (6, 4),
@@ -22,7 +22,7 @@ CREATE TABLE locoVision_tbl (
 );
 
 CREATE TABLE powerAdvisor_tbl (
-	timeVariable INT PRIMARY KEY,
+	timeVariable INT PRIMARY KEY AUTO_INCREMENT,
 	Last_Updated TIMESTAMP,
 	Health_Score DECIMAL (3, 1),
 	Defect_Level VARCHAR (8),
