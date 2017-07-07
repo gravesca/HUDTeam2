@@ -31,8 +31,4 @@ CREATE TABLE pastry.powerAdvisor_tbl (
 
 CREATE TABLE pastry.ActivePerformceChecks_tbl (
 	PerformanceCheckName VARCHAR2 (30) PRIMARY KEY
-<<<<<<< HEAD
 );
-=======
-)
->>>>>>> 6db060e1a1513880d9b8a5b0a347891b920ebffe
